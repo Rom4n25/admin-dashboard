@@ -1,0 +1,27 @@
+body,html{
+    margin: 0;
+    height: 100%;
+}
+
+.container-layout{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100%;
+}
+
+.sidebar{
+    grid-row: 1/5;
+    background-color: #0ea5e9;
+    
+}
+
+.header{
+    grid-column: 2/-1;
+}
+
+.main{
+    background-color: #d4d4d4;
+    grid-row: 2/-1;
+    height: 100%;
+}
