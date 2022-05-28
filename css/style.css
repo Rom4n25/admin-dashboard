@@ -1,5 +1,53 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Roboto', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #f9fafb;
+}
+
 body,html{
-    margin: 0;
     height: 100%;
 }
 
@@ -13,7 +61,74 @@ body,html{
 .sidebar{
     grid-row: 1/5;
     background-color: #0ea5e9;
-    
+    color: #f9fafb;
+    display:grid;
+    align-content: start;
+    gap:60px;
+    font-size: 22px;
+    padding: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    gap: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo::before, li::before{
+    filter: invert(100%) sepia(16%) saturate(442%) hue-rotate(176deg) brightness(100%) contrast(97%);
+}
+
+.logo::before{
+    content:url(../icons/view-dashboard.svg);
+}
+
+.home::before{
+    content:url(../icons/home-variant.svg);
+}
+
+.profile::before{
+    content:url(../icons/account.svg);
+}
+
+.messages::before{
+    content:url(../icons/message.svg);
+}
+
+.history::before{
+    content:url(../icons/history.svg);
+}
+
+.tasks::before{
+    content:url(../icons/calendar-check-outline.svg);
+}
+
+.communities::before{
+    content:url(../icons/account-group.svg);
+}
+
+.settings::before{
+    content:url(../icons/cog-outline.svg);
+}
+
+.support::before{
+    content:url(../icons/headphones.svg);
+}
+
+.privacy::before{
+    content:url(../icons/text-box-outline.svg);
 }
 
 .header{
