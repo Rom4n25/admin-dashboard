@@ -293,6 +293,8 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 16px;
     min-height: 280px;
     width: 250px;
     background-color: #f9fafb;
@@ -300,16 +302,30 @@ button{
     box-shadow: 0px 0px 14px -6px rgba(66, 68, 90, 1);
 }
 
-.trending{
-    
+.trending-content{
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
 }
 
 p{
     font-size: 21px;
     padding: 20px;
-
 }
 
+.trending-content .text .user{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 2px;;
+}
+
+.trending-content .text .desc{
+    font-size: 16px;
+    font-weight: 100;
+    padding:2px;
+}
 
 @media only screen and (max-width: 1161px) {
     .welcome-box{
