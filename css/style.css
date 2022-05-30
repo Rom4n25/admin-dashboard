@@ -48,7 +48,7 @@ a{
 }
 
 body,html{
-    height: 100%;
+    height: 100vh;
 }
 
 .container-layout{
@@ -217,8 +217,36 @@ button{
 .main{
     background-color: #d4d4d4;
     grid-row: 2/-1;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap:20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
+.article{
+  
+}
+
+.card-container{
+    display: grid;
+    gap:20px;
+    grid-template-columns: 1fr 1fr;
+    padding-left:20px;
+    padding-bottom:20px;
+}
+
+.card{
+    min-height: 200px;
+    min-width: 200px;
+    background-color: pink;
+}
+
+.aside{
+    background-color: blue;
+}
+
+
 
 @media only screen and (max-width: 1161px) {
     .welcome-box{
